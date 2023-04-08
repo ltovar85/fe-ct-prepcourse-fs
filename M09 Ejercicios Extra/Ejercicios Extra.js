@@ -6,7 +6,15 @@ function deObjetoAarray(objeto) {
    // Estos elementos debe ser cada par clave:valor del objeto recibido.
    // [EJEMPLO]: {D: 1, B: 2, C: 3} ---> [['D', 1], ['B', 2], ['C', 3]].
    // Tu código:
+   var nuevoArray = [];
+   var propiedades = Object.keys(objeto);
+
+   for (var i=0;i< propiedades.length;i++){
+      nuevoArray.push([propiedades[i],objeto[propiedades[i]]]);
+   }
+  return nuevoArray;   
 }
+
 
 function numberOfCharacters(string) {
    // La función recibe un string. Debes recorrerlo y retornar un objeto donde cada propiedad es una de las
