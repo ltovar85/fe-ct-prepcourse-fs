@@ -225,18 +225,11 @@ function esVerdadero(valor) {
       // Si el número recibido tiene tres dígitos retornar true.
       // Caso contrario, retornar false.
       // Tu código:
-      contador = 0;
-      while (num > 1){
-         contador = contador + 1;
-         num = num / 10;
-      }
-   if (contador >= 3){
-      return true;
-   }else{
-      return false ;
-   }
-      
-   
+      if (num >= 100 && num <= 999){
+         return true;
+      }else{
+         return false;
+      }      
    }
 
 function doWhile(num) {
